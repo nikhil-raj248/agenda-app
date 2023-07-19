@@ -72,16 +72,23 @@ class _AgendaListScreenState extends State<AgendaListScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text('Agenda',style: const TextStyle(
+                    const Text('Agenda',style: TextStyle(
                         fontSize: 32,
                         color: Color.fromRGBO(32, 59, 84, 1),
                         fontWeight: FontWeight.w600)),
                     Container(
                       height: 48,
-                      width: 48,
-                      decoration: const BoxDecoration(
+                      width: 48,decoration: const BoxDecoration(
                         shape: BoxShape.circle,
                         color: Colors.yellow
+                      ),
+                      clipBehavior: Clip.hardEdge,
+                      child: Image.network(
+                        'https://eventowl.net/app/webroot/uploads/speaker/1684988075_97.jpg',
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return Icon(Icons.error_outline_sharp,color: Colors.red,);
+                        },
                       ),
                     )
                   ],
