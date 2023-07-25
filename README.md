@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+Demo video link: https://drive.google.com/file/d/1LEtDEah3bHeI_z2qTatnOSDf92YyjbJO/view?usp=drivesdk
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
